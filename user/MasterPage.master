@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="user_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Edu Com</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script>
+    $(function () {
+        $("#tabs").tabs();
+    });
+</script>
+</head>
+
+<body>
+    <form id="form1" runat ="server" >
+
+<!-- top header bar -->
+<div class="header">
+	
+    <div class="wrapper">
+    
+    <!-- social icons and login  -->
+    <div class="right_side">
+    	
+         <!-- social icons div -->
+        <div class="social_icon">
+        
+        
+        
+        </div>
+         <!-- social icons div -->
+         
+         
+         <!-- login div -->
+         <div class="login">
+       
+         
+         </div>
+         <!-- login div -->
+         
+         
+        
+    </div>
+    <!-- social icons and login -->
+    
+    </div>
+
+</div>
+<!-- top header bar -->
+<div class="clearfix"></div>
+<!-- banner navigation bar  -->
+<div class="banner_navigation inner">
+	
+   
+   <!-- wrapper div -->
+   <div class="wrapper">
+   		
+        <!-- logo div -->
+        <div class="logo">
+        <a href="#"><img src="../images/logo.png" alt="" /></a>
+        </div>
+        <!-- logo div -->
+                                                                    
+        <!-- navigation div -->
+        <div class="navigation">
+        
+        <ul>
+        	<li><a href="frmprf.aspx">Profile</a></li>
+            <li><a href="frmmycol.aspx">My Lessons</a></li>
+            <li><a href="frmsrcles.aspx">Search Lessons</a></li> 
+             <li><a href="frmpurles.aspx">Enrolled Lessons</a></li> 
+             <li><a href="frmchgpwd.aspx">Change Password</a></li>  
+            <li>
+      <asp:LinkButton ID="lk1" runat="server" CausesValidation="false" OnClick="lk1_Click">Logout</asp:LinkButton>
+            </li>
+        </ul>
+        
+        </div>
+        <!-- navigation div -->
+        
+   
+        
+       
+        
+        <div class="clearfix">Welcome
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#FF3300"></asp:Label>
+        </div>
+   	
+    
+   </div>
+   <!-- wrapper div -->
+   
+
+</div>
+<!-- banner navigation bar  -->
+
+<!-- content div -->
+<div class="content inner">
+
+	
+    <div class="wrapper">
+    
+    	
+       
+        	
+        <div class="clearfix"></div>    
+        
+        <!-- left side div -->
+         <!-- left side div -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+      
+          <!-- right side div -->
+        <!-- right side div -->
+        
+    	    
+            
+            
+    </div>
+    
+
+</div>
+<!-- content div -->
+<div class="clearfix"></div>
+
+<!-- footer div -->
+
+		
+        
+
+
+
+
+
+</form>
+</body>
+</html>

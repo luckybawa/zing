@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Edu Com</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script>
+    $(function () {
+        $("#tabs").tabs();
+    });
+</script>
+</head>
+
+<body>
+    <form id="form1" runat ="server" >
+
+<!-- top header bar -->
+<div class="header">
+	
+    <div class="wrapper">
+    
+    <!-- social icons and login  -->
+    <div class="right_side">
+    	
+         <!-- social icons div -->
+        <div class="social_icon">
+        
+        
+        
+        </div>
+         <!-- social icons div -->
+         
+         
+         <!-- login div -->
+         <div class="login">
+         
+         
+         
+         </div>
+         <!-- login div -->
+         
+         
+        
+    </div>
+    <!-- social icons and login -->
+    
+    </div>
+
+</div>
+<!-- top header bar -->
+<div class="clearfix"></div>
+<!-- banner navigation bar  -->
+<div class="banner_navigation inner">
+	
+   
+   <!-- wrapper div -->
+   <div class="wrapper">
+   		
+        <!-- logo div -->
+        <div class="logo">
+        <a href="#"><img src="../images/logo.png" alt="" /></a>
+        </div>
+        <!-- logo div -->
+                                                                    
+        <!-- navigation div -->
+        <div class="navigation">
+        
+        <ul>
+            <li><a href="frmcat.aspx">Categories</a></li>
+            <li>
+                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+            </li>
+         
+        </ul>
+        
+        </div>
+        <!-- navigation div -->
+        
+   
+        
+       
+        
+        <div class="clearfix"></div>
+   	
+    
+   </div>
+   <!-- wrapper div -->
+   
+
+</div>
+<!-- banner navigation bar  -->
+
+<!-- content div -->
+<div class="content inner">
+
+	
+    <div class="wrapper">
+    
+    	
+       
+        	
+        <div class="clearfix"></div>    
+        
+        <!-- left side div -->
+         <!-- left side div -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+      
+          <!-- right side div -->
+        <!-- right side div -->
+        
+    	    
+            
+            
+    </div>
+    
+
+</div>
+<!-- content div -->
+<div class="clearfix"></div>
+
+<!-- footer div -->
+<div class="footer">
+
+		
+        <div class="wrapper">
+        
+        		
+                <!-- footer first div -->
+                <div class="footer_first">
+                	
+                    <h2 class="title">About EduCom</h2>
+                    
+                    <p>Suspendisse sed dignissim augue. Nullam ac lacus vel ante fermentum lobortis. Aenean ac orci vel neque luctus congue eu at urna. Nullam ac lacus vel ante fermentum lobortis. Aenean ac orci vel neque luctus congue eu at urna. </p>
+                
+                
+                </div>
+                <!-- footer first div -->
+                
+                 <!-- footer second div -->
+                <div class="footer_second">
+                	
+                    <h2 class="title">Join us on</h2>
+                    
+                    <ul>
+					<li class="fb"><a href="#">Facebook</a></li>
+                    <li class="tw"><a href="#">Twitter</a></li>
+                    <li class="pt"><a href="#">Pinterest</a></li>	
+                    </ul>
+                    
+                	
+                </div>
+                <!-- footer second div -->
+                
+                 <!-- footer third div -->
+                <div class="footer_third">
+                
+               		<h2 class="title">Email Newsletters</h2>
+                    
+                    <p>Lessons, Teachers, News and your feedback. </p>
+                    
+                    <div class="clearfix"></div>
+                    
+                    <div class="newsletter">
+                    
+                    <div class="box1">
+                    
+                    <input type="text" class="t1" value="Email Address" />
+                    </div>
+                    
+                     <div class="clearfix"></div>
+                    <input type="submit" class="submit" value="subscribe" />
+                    
+                    </div>
+                    
+                
+               </div>
+                <!-- footer third div -->
+                
+               <!-- footer forth div -->
+                <div class="footer_forth">
+                
+                	<h2 class="title">Quick Links</h2>
+                    <div class="clearfix"></div>
+                    
+                    <ul>
+                    <li><a href="#">coaching</a></li>
+                    <li><a href="#">lessons</a></li>
+                    <li><a href="#">teachers</a></li>
+                    <li><a href="#">learning</a></li>
+                    </ul>
+                    
+                    
+                </div>
+                <!-- footer forth div -->
+                
+            
+            
+            	<div class="clearfix"></div>
+                
+                <!-- footer below div -->
+                <div class="footer_gen">
+                <p>Copyright © 2014 EduCom</p>
+                </div>
+                <!-- footer below div -->
+        
+        </div>
+    
+
+</div>
+<!-- footer div -->
+
+
+
+
+
+</form>
+</body>
+</html>

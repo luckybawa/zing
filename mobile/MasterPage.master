@@ -1,0 +1,364 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat ="server" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Edu Com</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form id="form1" runat ="server" >
+<!-- top header bar -->
+<div class="header">
+	
+    <div class="wrapper">
+    
+    <!-- social icons and login  -->
+    <div class="right_side">
+    	
+         <!-- social icons div -->
+        <div class="social_icon">
+        
+        
+        
+        </div>
+         <!-- social icons div -->
+         
+         
+         <!-- login div -->
+         <div class="login">
+         
+         	<ul>
+            <li><a href="index.aspx">Login</a></li>
+            <li>|</li>
+            <li><a href="frmreg.aspx">Register</a></li>
+            </ul>
+         
+         </div>
+         <!-- login div -->
+         
+         
+        
+    </div>
+    <!-- social icons and login -->
+    
+    </div>
+
+</div>
+<!-- top header bar -->
+<div class="clearfix"></div>
+<!-- banner navigation bar  -->
+<div class="banner_navigation">
+	
+   
+   <!-- wrapper div -->
+   <div class="wrapper">
+   		
+        <!-- logo div -->
+        <div class="logo">
+        <a href="#"><img src="../images/logo.png" alt="" /></a>
+        </div>
+        <!-- logo div -->
+                                                                    
+        <!-- navigation div -->
+        
+        <!-- navigation div -->
+        
+        <div class="clearfix">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        
+        </div>
+        
+        <!-- left side div -->
+        <div class="left_form">
+        
+        </div>
+        <!-- left side div -->
+        
+        <!-- right side div -->
+        <!-- right side div -->
+        
+        <div class="clearfix"></div>
+   	
+    
+   </div>
+   <!-- wrapper div -->
+   
+
+</div>
+<!-- banner navigation bar  -->
+
+<div class="clearfix"></div>
+<!-- content div -->
+<div class="content">
+
+	
+    <div class="wrapper">
+    
+    	
+        
+        <h1 class="title">The future is waiting for you</h1>
+        <h4 class="sub_title">Quisque eu lectus at sem imperdiet aliqua and pendisse a hendsumellus nec turpis sed tellus.</h4>	
+        	
+        <div class="clearfix"></div>    
+        
+        <!-- single div  -->
+        <div class="single_row">
+        
+        	<!-- box div  -->	
+        	<div class="box">
+            
+            	<div class="image_first">
+                	<a href="#"></a>
+                </div>
+                <div class="clearfix"></div>
+                
+                <h3>Expert Teachers</h3>
+                
+                <p>An utinam reprimique duo, putant mandamus cu qui.</p>
+                
+            
+            </div>
+            <!-- box div  -->	
+            
+            <!-- box div  -->	
+            <div class="box">
+            
+            	<div class="image_second">
+                	<a href="#"></a>
+                </div>
+              <div class="clearfix"></div>
+                
+                <h3>Video Courses</h3>
+                
+                <p>An utinam reprimique duo, putant mandamus cu qui.</p>
+                
+            
+            </div>
+            <!-- box div  -->	
+            
+            <!-- box div  -->	
+            <div class="box">
+            
+            	<div class="image_third">
+                	<a href="#"></a>
+                </div>
+              <div class="clearfix"></div>
+                
+                <h3>Library</h3>
+                
+                <p>An utinam reprimique duo, putant mandamus cu qui.</p>
+                
+            
+            </div>
+            <!-- box div  -->	
+            
+            <!-- box div  -->	
+            <div class="box">
+            
+            	<div class="image_forth">
+                	<a href="#"></a>
+                </div>
+              <div class="clearfix"></div>
+                
+                <h3>Online Courses</h3>
+                
+                <p>An utinam reprimique duo, putant mandamus cu qui.</p>
+                
+            
+            </div>
+            <!-- box div  -->	
+            
+            <div class="clearfix"></div>    
+        </div>
+        <!-- single div  -->    
+        
+        
+        
+    	<div class="clearfix"></div>    
+        
+        <!-- single div  -->
+        <div class="row">
+        
+       	<h1 class="title">Trending Lessons</h1>
+        <h4 class="sub_title">Quisque eu lectus at sem imperdiet aliqua and pendisse a hendsumellus nec turpis sed tellus.</h4>	
+        
+        <div class="box first">
+        	
+            <div class="../images">
+            <a href="#"><img src="../images/pic1.png" alt="" /></a>
+            
+            </div>
+            
+           <h2 class="title">How to Make DIY Sparkle Shoes</h2>
+           
+           <div class="date_time">
+           	
+            	28 January, 2013 <span class="divider">|</span> <span> 1 comments </span>
+           
+           </div>
+           
+           <p>Quisque eu lectus at sem imperdiet aliqua and<br/>
+            pendisse a hendsumellus nec turpis sed tellus.</p>
+           
+        
+        </div>
+        
+        <div class="box">
+        	
+            <div class="../images">
+            <a href="#"><img src="../images/pic2.png" alt="" /></a>
+            
+            </div>
+            
+           <h2 class="title">How to Make Reusable...</h2>
+           
+           <div class="date_time">
+           	
+            	28 January, 2013 <span class="divider">|</span> <span> 1 comments </span>
+           
+           </div>
+           
+           <p>Quisque eu lectus at sem imperdiet aliqua and<br/>
+            pendisse a hendsumellus nec turpis sed tellus.</p>
+           
+        
+        </div>
+        
+        <div class="box">
+        	
+            <div class="../images">
+            <a href="#"><img src="../images/pic3.png" alt="" /></a>
+            
+            </div>
+            
+           <h2 class="title">French Madeleines</h2>
+           
+           <div class="date_time">
+           	
+            	28 January, 2013 <span class="divider">|</span> <span> 1 comments </span>
+           
+           </div>
+           
+           <p>Quisque eu lectus at sem imperdiet aliqua and<br/>
+            pendisse a hendsumellus nec turpis sed tellus.</p>
+           
+        
+        </div>
+        
+        	
+        	
+        
+        </div>    
+        <!-- single div  -->    
+            
+            
+            
+            
+    </div>
+    
+
+</div>
+<!-- content div -->
+<div class="clearfix"></div>
+
+<!-- footer div -->
+<div class="footer">
+
+		
+        <div class="wrapper">
+        
+        		
+                <!-- footer first div -->
+                <div class="footer_first">
+                	
+                    <h2 class="title">About EduCom</h2>
+                    
+                    <p>Suspendisse sed dignissim augue. Nullam ac lacus vel ante fermentum lobortis. Aenean ac orci vel neque luctus congue eu at urna. Nullam ac lacus vel ante fermentum lobortis. Aenean ac orci vel neque luctus congue eu at urna. </p>
+                
+                
+                </div>
+                <!-- footer first div -->
+                
+                 <!-- footer second div -->
+                <div class="footer_second">
+                	
+                    <h2 class="title">Join us on</h2>
+                    
+                    <ul>
+					<li class="fb"><a href="#">Facebook</a></li>
+                    <li class="tw"><a href="#">Twitter</a></li>
+                    <li class="pt"><a href="#">Pinterest</a></li>	
+                    </ul>
+                    
+                	
+                </div>
+                <!-- footer second div -->
+                
+                 <!-- footer third div -->
+                <div class="footer_third">
+                
+               		<h2 class="title">Email Newsletters</h2>
+                    
+                    <p>Lessons, Teachers, News and your feedback. </p>
+                    
+                    <div class="clearfix"></div>
+                    
+                    <div class="newsletter">
+                    
+                    <div class="box1">
+                    
+                    <input type="text" class="t1" value="Email Address" />
+                    </div>
+                    
+                     <div class="clearfix"></div>
+                    <input type="submit" class="submit" value="subscribe" />
+                    
+                    </div>
+                    
+                
+               </div>
+                <!-- footer third div -->
+                
+               <!-- footer forth div -->
+                <div class="footer_forth">
+                
+                	<h2 class="title">Quick Links</h2>
+                    <div class="clearfix"></div>
+                    
+                    <ul>
+                    <li><a href="#">coaching</a></li>
+                    <li><a href="#">lessons</a></li>
+                    <li><a href="#">teachers</a></li>
+                    <li><a href="#">learning</a></li>
+                    </ul>
+                    
+                    
+                </div>
+                <!-- footer forth div -->
+                
+            
+            
+            	<div class="clearfix"></div>
+                
+                <!-- footer below div -->
+                <div class="footer_gen">
+                <p>Copyright © 2014 EduCom</p>
+                </div>
+                <!-- footer below div -->
+        
+        </div>
+    
+
+</div>
+<!-- footer div -->
+
+
+
+
+</form>
+</body>
+</html>

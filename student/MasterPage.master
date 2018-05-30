@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="student_MasterPage" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat ="server" >
+<title>CS Group</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+ 
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 7]>
+	<div style='clear:both;text-align:center;position:relative'>
+		&nbsp;</div>
+<![endif]-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(window).resize(function () {
+            $var = $(window).width();
+            $("body").css("width", $var + "px");
+            $("body").css("display", "table");
+        });
+    });
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="main-wrapper"> 
+  <!----------< Header >------------>
+  <header>
+     <section class="header-inner">
+  <div class="cs-logo"><a href="#"><img border="0" src="images/cs-soft-logo.png"></a></div>
+        </section>
+  </header>
+  
+  <!----------< End Header >------------> 
+  <!----------< content-main >------------>
+  <section class="content-main-area">
+    <section class="content-main-area2"> 
+      <!----------< Contant-area >------------>
+      <section class="content-area">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+      </section>
+      <!----------< End Contant-area >------------> 
+    </section>
+  </section>
+  <!----------< End content-main >------------> 
+  
+  <!----------< Footer >------------>
+  <footer>
+  <section class="footer-inner">Copyright © 2014 CS Soft Solutions Pvt. Ltd. All rights reserved.   </section>
+  </footer>
+  <!----------< End Footer >------------> 
+</div>
+        </form>
+</body>
+</html>
